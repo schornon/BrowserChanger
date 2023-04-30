@@ -21,7 +21,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     menu.autoenablesItems = false
     
     if let button = statusItem.button {
-      button.image = NSImage(named: NSImage.Name("tambourine"))
+      button.image = NSImage(named: NSImage.Name("tambourine-256"))
+      button.image?.size = .init(width: 18, height: 18)
     }
 
     constructMenu()
